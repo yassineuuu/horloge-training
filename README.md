@@ -13,7 +13,7 @@ Pour commencer, vous avez un document HTML contenant une image SVG d'une horloge
 
 - Des `opérateurs` pour traduire cette information en degrés sur un cercle
 
-- Les `propriétés des éléments DOM` pour positionner correctement les bras
+- Les `propriétés des éléments DOM` pour positionner correctement les aiguilles
 
 Le résultat final sera une horloge analogique simple, mais précise, que vous pourrez placer sur n'importe quelle page web à l'avenir.
 
