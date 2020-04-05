@@ -5,8 +5,13 @@ const AIGUILLESEC = document.querySelector("#second");
 
 //Extraire l'heure actuel à l'aide de l'objet Date()
 
-
+var date = new Date();
 //Ajouter l'heure , minite , seconde  dans des varaiables
+var heure = date.getHours();
+var minite = date.getMinutes();
+var second = date.getSeconds();
+
+var time = [heure,minite,second]
 
 
 
@@ -15,10 +20,15 @@ const AIGUILLESEC = document.querySelector("#second");
 
 
 // Déplacer les aiguilles 
-function demarrerLaMontre() {
-
+function demarrerLaMontre(b) {
+    for(i=0;i<b;i++){
+        AIGUILLESEC.style.transform = "rotate("+i+"deg)";
+        
+    }
 
 
 }
+demarrerLaMontre(360);
+
 // Exercuter la fonction chaque second
 var interval = setInterval(demarrerLaMontre, 1000);

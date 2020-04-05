@@ -5,6 +5,7 @@
     height: 90vh;
     justify-content: center;
     align-items: middle;
+    
 }
 
 .clockbox,
@@ -22,6 +23,7 @@
 
 .mid-circle {
     fill: #000;
+
 }
 .hour-marks {
     fill: none;
@@ -35,6 +37,10 @@
     stroke: #000;
     stroke-width: 17;
     stroke-miterlimit: 10;
+    /* transform-origin: 50%; */
+    transform: rotate(0deg);
+
+
 }
 
 .minute-arm {
@@ -42,6 +48,9 @@
     stroke: #000;
     stroke-width: 11;
     stroke-miterlimit: 10;
+    /* transform-origin: 50%; */
+    transform: rotate(0deg);
+
 }
 
 .second-arm {
@@ -49,6 +58,9 @@
     stroke: #000;
     stroke-width: 4;
     stroke-miterlimit: 10;
+    /* transform-origin: 50%; */
+    transform: rotate(0deg);
+
 }
 
 /* Transparent box ensuring arms center properly. */
@@ -61,6 +73,6 @@
 #hour,
 #minute,
 #second {
-    transform-origin: 300px 300px;
+    transform-origin: 50%;
     transition: transform .5s ease-in-out;
 }
